@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "creation": "2026-05-23 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill",
+  "experience",
+  "rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Skill",
+   "reqd": 1
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Experience"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Rating"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2026-05-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Smart Ats",
+ "name": "ATS Candidate Skill",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

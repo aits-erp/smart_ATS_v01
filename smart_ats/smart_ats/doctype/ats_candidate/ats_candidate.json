@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ATS-CAND-.####",
+ "creation": "2026-05-23 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "profile_section",
+  "candidate_name",
+  "email",
+  "phone",
+  "resume_attachment",
+  "profile_column",
+  "applied_job",
+  "candidate_status",
+  "source",
+  "scoring_section",
+  "ats_score",
+  "skills",
+  "matching_skills",
+  "missing_skills",
+  "candidate_skills",
+  "experience_section",
+  "experience",
+  "current_company",
+  "expected_salary",
+  "notice_period",
+  "review_section",
+  "ai_summary",
+  "recruiter_notes",
+  "interview_rating"
+ ],
+ "fields": [
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "Candidate Profile"
+  },
+  {
+   "bold": 1,
+   "fieldname": "candidate_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "resume_attachment",
+   "fieldtype": "Attach",
+   "label": "Resume Attachment"
+  },
+  {
+   "fieldname": "profile_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applied_job",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Applied Job",
+   "options": "ATS Job Opening",
+   "reqd": 1
+  },
+  {
+   "default": "Applied",
+   "fieldname": "candidate_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Candidate Status",
+   "options": "Applied\nScreening\nShortlisted\nInterview\nOffered\nHired\nRejected"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "\nLinkedIn\nReferral\nWebsite\nConsultant"
+  },
+  {
+   "fieldname": "scoring_section",
+   "fieldtype": "Section Break",
+   "label": "ATS Scoring"
+  },
+  {
+   "fieldname": "ats_score",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "ATS Score",
+   "read_only": 1
+  },
+  {
+   "description": "Comma-separated skills are auto-matched against the job opening.",
+   "fieldname": "skills",
+   "fieldtype": "Small Text",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "matching_skills",
+   "fieldtype": "Small Text",
+   "label": "Matching Skills",
+   "read_only": 1
+  },
+  {
+   "fieldname": "missing_skills",
+   "fieldtype": "Small Text",
+   "label": "Missing Skills",
+   "read_only": 1
+  },
+  {
+   "fieldname": "candidate_skills",
+   "fieldtype": "Table",
+   "label": "Candidate Skill Matrix",
+   "options": "ATS Candidate Skill"
+  },
+  {
+   "fieldname": "experience_section",
+   "fieldtype": "Section Break",
+   "label": "Experience and Offer Fit"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "current_company",
+   "fieldtype": "Data",
+   "label": "Current Company"
+  },
+  {
+   "fieldname": "expected_salary",
+   "fieldtype": "Currency",
+   "label": "Expected Salary"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Data",
+   "label": "Notice Period"
+  },
+  {
+   "fieldname": "review_section",
+   "fieldtype": "Section Break",
+   "label": "Recruiter Review"
+  },
+  {
+   "fieldname": "ai_summary",
+   "fieldtype": "Text Editor",
+   "label": "AI-like Recruiter Summary",
+   "read_only": 1
+  },
+  {
+   "fieldname": "recruiter_notes",
+   "fieldtype": "Text Editor",
+   "label": "Recruiter Notes"
+  },
+  {
+   "fieldname": "interview_rating",
+   "fieldtype": "Rating",
+   "label": "Interview Rating"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Smart Ats",
+ "name": "ATS Candidate",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1
+  }
+ ],
+ "sort_field": "ats_score",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "candidate_name",
+ "track_changes": 1
+}

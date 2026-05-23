@@ -1,0 +1,14 @@
+.indicator-pill {
+	border-radius: 999px;
+	font-weight: 600;
+}
+
+.frappe-list .list-row {
+	border-radius: 8px;
+	margin: 4px 8px;
+}
+
+.form-dashboard .indicator-pill {
+	padding: 4px 10px;
+}
+

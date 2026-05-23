@@ -25,7 +25,7 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/smart_ats/css/smart_ats.css"
+app_include_css = "/assets/smart_ats/css/smart_ats.css"
 # app_include_js = "/assets/smart_ats/js/smart_ats.js"
 
 # include js, css files in header of web template
@@ -246,4 +246,3 @@ app_license = "mit"
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-
