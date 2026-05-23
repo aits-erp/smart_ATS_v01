@@ -79,3 +79,4 @@ def execute():
 
 		doc = frappe.get_doc({"doctype": "ATS Candidate", **row})
 		doc.insert(ignore_permissions=True)
+
