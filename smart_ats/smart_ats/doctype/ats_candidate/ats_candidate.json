@@ -15,6 +15,13 @@
   "applied_job",
   "candidate_status",
   "source",
+  "resume_parser_section",
+  "resume_parse_status",
+  "parsed_email",
+  "parsed_phone",
+  "parsed_skills",
+  "resume_parse_log",
+  "parsed_resume_text",
   "scoring_section",
   "ats_score",
   "skills",
@@ -62,6 +69,49 @@
    "fieldname": "resume_attachment",
    "fieldtype": "Attach",
    "label": "Resume Attachment"
+  },
+  {
+   "fieldname": "resume_parser_section",
+   "fieldtype": "Section Break",
+   "label": "Resume Parser"
+  },
+  {
+   "default": "Not Parsed",
+   "fieldname": "resume_parse_status",
+   "fieldtype": "Select",
+   "label": "Resume Parse Status",
+   "options": "Not Parsed\nParsed\nFailed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parsed_email",
+   "fieldtype": "Data",
+   "label": "Parsed Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parsed_phone",
+   "fieldtype": "Data",
+   "label": "Parsed Phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parsed_skills",
+   "fieldtype": "Small Text",
+   "label": "Parsed Skills",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resume_parse_log",
+   "fieldtype": "Small Text",
+   "label": "Resume Parse Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parsed_resume_text",
+   "fieldtype": "Long Text",
+   "label": "Parsed Resume Text",
+   "read_only": 1
   },
   {
    "fieldname": "profile_column",

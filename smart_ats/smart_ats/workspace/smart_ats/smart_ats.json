@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"ats-title\",\"type\":\"header\",\"data\":{\"text\":\"Smart ATS\"}},{\"id\":\"ats-spacer\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ats-candidates\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ATS Candidate\",\"col\":3}},{\"id\":\"ats-jobs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ATS Job Opening\",\"col\":3}}]",
+ "content": "[{\"id\":\"ats-title\",\"type\":\"header\",\"data\":{\"text\":\"Smart ATS\"}},{\"id\":\"ats-spacer\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ats-candidates\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ATS Candidate\",\"col\":3}},{\"id\":\"ats-jobs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ATS Job Opening\",\"col\":3}},{\"id\":\"ats-report\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"ATS Resume Analysis Report\",\"col\":3}}]",
  "creation": "2026-05-23 00:00:00.000000",
  "custom_blocks": [],
  "doc_view": "List",
@@ -30,6 +30,16 @@
    "link_count": 0,
    "link_to": "ATS Job Opening",
    "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "ATS Resume Analysis Report",
+   "link_count": 0,
+   "link_to": "ATS Resume Analysis Report",
+   "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   }
@@ -63,6 +73,15 @@
    "link_to": "ATS Job Opening",
    "stats_filter": "[]",
    "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "Report",
+   "format": "{}",
+   "label": "ATS Resume Analysis Report",
+   "link_to": "ATS Resume Analysis Report",
+   "stats_filter": "[]",
+   "type": "Report"
   }
  ],
  "title": "Smart ATS"
